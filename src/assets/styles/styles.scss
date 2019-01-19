@@ -1,0 +1,53 @@
+// Main
+$main-width: 540px;
+
+.main {
+  lost-utility: clearfix;
+  lost-center: $main-width;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+// Header
+$header-width: $main-width;
+$header-height: 100px;
+$background-color: lighten(brown, 10%);
+$text-color: white;
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: $header-height;
+  background: $background-color;
+  color: $text-color;
+  font-size: 30px;
+}
+
+// Rivets
+$rivets-dimensions: 10px;
+$rivets-color: $text-color;
+
+.rivet {
+  width: $rivets-dimensions;
+  height: $rivets-dimensions;
+  background: $rivets-color;
+  border-radius: 50%;
+}
+
+.rivetOne {
+  @extend .rivet;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.rivetTwo {
+  @extend .rivet;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

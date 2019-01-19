@@ -1,0 +1,68 @@
+{
+  "name": "react-redux-tutorial",
+  "description": "",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Herbert Kagumba <habukagumba@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test:eslint": "eslint src/ --ext .js --ext .jsx",
+    "pretest": "npm run test:eslint",
+    "start": "NODE_ENV=development parcel src/index.html --open",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url https://Habu-Kagumba.github.io/react-boilerplate/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,scss,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "postcss": {
+    "modules": true,
+    "plugins": {
+      "lost": {},
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      },
+      "postcss-preset-env": {},
+      "postcss-modules": {
+        "generateScopedName": "[name]_[local]_[hash:base64:5]"
+      }
+    }
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.12.1",
+    "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
+    "lost": "^8.3.0",
+    "modules": "^0.4.0",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.11.0",
+    "postcss-modules": "^1.4.1",
+    "postcss-preset-env": "^6.5.0",
+    "prettier": "^1.15.3",
+    "react-hot-loader": "^4.6.3",
+    "stylelint": "^9.10.1"
+  }
+}
