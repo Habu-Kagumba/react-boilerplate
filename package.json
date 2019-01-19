@@ -7,7 +7,6 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "precommit": "lint-staged",
     "test:eslint": "eslint src/ --ext .js --ext .jsx",
     "pretest": "npm run test:eslint",
     "start": "NODE_ENV=development parcel src/index.html --open",
@@ -64,5 +63,10 @@
     "prettier": "^1.15.3",
     "react-hot-loader": "^4.6.3",
     "stylelint": "^9.10.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
