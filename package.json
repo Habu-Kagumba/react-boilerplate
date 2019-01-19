@@ -10,7 +10,7 @@
     "test:eslint": "eslint src/ --ext .js --ext .jsx",
     "pretest": "npm run test:eslint",
     "start": "NODE_ENV=development parcel src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html --public-url https://Habu-Kagumba.github.io/react-boilerplate/",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url https://habu-kagumba.github.io/react-boilerplate/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
