@@ -39,7 +39,7 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
-    "react": "^16.8.6",
+    "react": "^16.10.1",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1"
