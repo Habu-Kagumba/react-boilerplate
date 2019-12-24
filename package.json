@@ -64,7 +64,7 @@
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.3",
     "postcss-modules": "^1.4.1",
-    "postcss-preset-env": "^6.6.0",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
     "react-hot-loader": "^4.9.0",
     "stylelint": "^12.0.0"
